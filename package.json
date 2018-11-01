@@ -1,0 +1,31 @@
+{
+  "name": "react-01",
+  "version": "1.0.0",
+  "description": "React Project Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Mihai Alexandru Pacurar",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
